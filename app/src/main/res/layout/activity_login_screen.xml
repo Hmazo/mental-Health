@@ -5,8 +5,8 @@
     android:id="@+id/RelativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Backgroundblue"
-    tools:context=".Login">
+    android:background="@drawable/backgroundblue"
+    tools:context=".Register">
 
 
     <EditText
@@ -23,7 +23,7 @@
         android:textColorHint="@color/white"/>
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/textPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -42,13 +42,13 @@
         android:layout_width="150dp"
         android:layout_height="20dp"
         android:layout_marginTop="480dp"
-        android:layout_marginleft="100dp"
+        android:layout_marginLeft="100dp"
         android:text="Don't have an Account ?"
         android:textColor="@color/white"
         android:translationX="60dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="480dp"
@@ -63,11 +63,11 @@
         android:layout_height="35dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="400dp"
-        android:background="@drawable/Backgroundblue"
+        android:background="@drawable/backgroundblue"
         android:text="@string/Login"
         android:textColor="@color/white"
         app:cardCornerRadius="25dp"
-        app:backgroundTint="@drawable/Backgroundblue"
+        app:backgroundTint="@drawable/backgroundblue"
         >
 
         <RelativeLayout
@@ -75,7 +75,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/loginText"
+                android:id="@+id/login"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/Buttoncolor"

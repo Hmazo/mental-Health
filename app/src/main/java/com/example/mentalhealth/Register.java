@@ -106,7 +106,7 @@ public class Register extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
-                                Intent i = new Intent(Register.this, Home.class);
+                                Intent i = new Intent(Register.this, loginScreen.class);
                                 startActivity(i);
                                 finish();
                             }

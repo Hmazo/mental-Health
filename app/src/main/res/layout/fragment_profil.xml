@@ -17,8 +17,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
-
             <androidx.cardview.widget.CardView
 
                 android:layout_marginTop="15dp"
@@ -124,12 +122,12 @@
                 android:backgroundTint="#fff"
                 android:textColor="#000"
                 android:textSize="12dp"
-                />
+                android:gravity="center_horizontal" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="">
+                android:layout_marginTop="0dp">
 
 
 

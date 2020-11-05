@@ -4,23 +4,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="120dp"
+    android:background="@drawable/shape">
 
 
     <ImageView
         android:id="@+id/searchResultPic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="28dp"
-        tools:srcCompat="@tools:sample/avatars"
-        />
+        android:layout_width="99dp"
+        android:layout_height="89dp"
+        android:background="@drawable/cicleprofileicon"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/searchResultText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="207dp"
+        android:layout_height="24dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="65dp" />
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="51dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

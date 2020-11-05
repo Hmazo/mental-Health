@@ -28,11 +28,12 @@ public class RechercherFragment extends Fragment {
 
 
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    /* View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_rechercher, container, false);
 
         recyclerView = view.findViewById(R.id.userSearchRecycler);
     }
+
+     */
 }

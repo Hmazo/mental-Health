@@ -85,7 +85,7 @@ public class Register extends AppCompatActivity {
 
     }
 
-    public void createAccount(final String username, String password, String email, String dateob){
+    public void createAccount(final String fName, String password, String email, String dateob){
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -96,17 +96,16 @@ public class Register extends AppCompatActivity {
 
                     myref = FirebaseDatabase.getInstance().getReference("MyUsers").child(userId);
 
-                    HashMap<String, String> hashmap = new HashMap<>();
-                    hashmap.put("id" , userId.toString());
-                    hashmap.put("name", username);
+                    User newUser = new User(fName,email,dateob,password,userId);
 
 
 
-                    myref.setValue(hashmap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    myref.setValue(newUser).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
                                 Intent i = new Intent(Register.this, loginScreen.class);
+                                i.putExtra("userID",userId);
                                 startActivity(i);
                                 finish();
                             }
